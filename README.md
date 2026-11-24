@@ -1,5 +1,7 @@
 # CheckRoot · Risk & Compliance (vitrine do projeto)
 
+> 📌 **Repositório de portfólio.** Mostra o que o projeto faz. O código completo fica em repositório privado. Mais projetos no [meu perfil](https://github.com/julliamelo).
+
 Este repositório é só a vitrine. O código-fonte do projeto fica em um repositório privado. Se quiser conversar sobre ele, entre em contato.
 
 ## O objetivo
