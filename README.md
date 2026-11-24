@@ -41,12 +41,17 @@ Python no servidor e HTML, CSS e JavaScript na interface.
 
 ## Veja nas publicações
 
-O projeto teve boa recepção no LinkedIn. Nas duas publicações dá para ver o robô e a plataforma funcionando:
+O projeto teve boa recepção no LinkedIn. Cada publicação mostra uma parte dele:
 
-1. [Publicação 1: o robô que consulta CNPJ](https://lnkd.in/p/dMwdxbUY)
-2. [Publicação 2: a plataforma CheckRoot](https://lnkd.in/p/ddpQVW5M)
+### Publicação 1: o robô que consulta CNPJ
+
+[Ver a publicação no LinkedIn](https://lnkd.in/p/dMwdxbUY)
 
 ![Mesa de trabalho com o robô da Receita em Python e o ambiente de desenvolvimento](imagens/publicacao-1-robo.png)
+
+### Publicação 2: a plataforma CheckRoot
+
+[Ver a publicação no LinkedIn](https://lnkd.in/p/ddpQVW5M)
 
 ![Plataforma CheckRoot rodando ao lado do ambiente de desenvolvimento](imagens/publicacao-2-plataforma.png)
 
