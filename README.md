@@ -1,60 +1,115 @@
-# CheckRoot · Risk & Compliance (vitrine do projeto)
+# CheckRoot · Consulta de CNPJ na Receita
 
-> 📌 **Repositório de portfólio.** Mostra o que o projeto faz. O código completo fica em repositório privado. Mais projetos no [meu perfil](https://github.com/julliamelo).
+Digite um CNPJ e receba um dossiê da empresa, montado a partir de fontes públicas, para apoiar decisões de **compra, venda e crédito**.
 
-Este repositório é só a vitrine. O código-fonte do projeto fica em um repositório privado. Se quiser conversar sobre ele, entre em contato.
+> **Repositório de portfólio.** Mostra o que o projeto faz. O código-fonte fica em um repositório privado. Quer conversar sobre ele? [Me chame no LinkedIn](https://www.linkedin.com/in/j%C3%BAllia-melo-5512a6194/).
 
-## O objetivo
+## Como surgiu este desenvolvimento (case)
 
-Ajudar a decidir com mais segurança **antes de comprar, vender ou conceder crédito**. A pessoa informa o CNPJ de uma empresa e recebe um dossiê organizado, com um semáforo de risco (verde, amarelo, vermelho ou cinza) e o motivo escrito de cada resultado.
+Este **case** surgiu de uma **dor que vivi em uma cooperativa**: várias áreas precisam conferir uma empresa antes de decidir. Vi isso na prática, analisei em detalhe e percebi que podia melhorar.
 
-## De onde veio
+Identifiquei uma **oportunidade de melhoria**: reunir informações de fontes públicas, reduzindo o gasto com dados e concentrando o investimento em desenvolvimento e manutenção. A cada etapa surgem novas necessidades, e a solução evolui junto.
 
-O projeto nasceu como um robô de automação: ele lia uma planilha com uma lista de CNPJs, conferia cada um em fontes públicas e entregava um relatório em Excel pronto para uso. Isso eliminava uma conferência manual, repetitiva e sujeita a erro.
+O objetivo é reunir em um só lugar as informações que ajudam organizações de diferentes segmentos a **decidir com mais segurança**, com uma solução em **melhoria contínua**.
 
-## Onde estamos agora
+## Para quem o projeto ajuda
 
-O robô virou uma **plataforma com interface web**:
+| Área | Como ajuda |
+|---|---|
+| **Crédito** | Apoio na análise antes de conceder |
+| **Comercial e vendas** | Conhecer a empresa antes de visitar ou negociar |
+| **Cadastro** | Confirmar os dados da empresa |
+| **Compras e fornecedores** | Conferir antes de fechar contrato |
+| **RH** | Conferir antes de contratar palestra, treinamento ou consultoria |
+| **Risco e compliance** | Ver os pontos que pedem verificação |
 
-- **Página inicial** apresentando a plataforma.
-- **Login com e-mail e senha**, para cada pessoa ter o seu espaço.
-- **Painel** com o resumo das consultas já feitas e o histórico de cada usuário.
-- **Dossiê da empresa** com cadastro, porte, sócios e saúde tributária, cada informação com a fonte e a data.
-- **Consulta em lote** por planilha, com relatório em Excel e PDF.
+## Código
 
-## Princípios
+### Robô de consulta da Receita
 
-- **Transparência:** o que ainda não foi consultado aparece como "não consultado". Nunca como "nada consta".
-- **Privacidade (LGPD):** documentos de pessoas físicas aparecem mascarados.
-- **Fontes públicas:** os dados vêm de bases públicas e oficiais, e a tela diz de onde cada um veio.
+Onde o projeto começou: lê uma planilha de CNPJs, consulta cada empresa e gera um relatório em Excel.
 
-## Próximos passos
+![Trecho do código do robô aberto no VS Code](imagens/codigo-robo.png)
 
-- Ligar mais fontes de conformidade (compliance).
-- Exportar o dossiê em PDF e Excel.
-- Versão para desktop.
-- Novos módulos na plataforma, como prospecção de empresas.
+### Interface web
 
-## Tecnologia
+A aplicação que recebe o CNPJ e mostra o dossiê.
 
-Python no servidor e HTML, CSS e JavaScript na interface.
+![Trecho do código da aplicação web aberto no VS Code](imagens/codigo-plataforma.png)
 
-## Veja nas publicações
+## O que o dossiê entrega
 
-O projeto teve boa recepção no LinkedIn. Cada publicação mostra uma parte dele:
+### 🏢 Identificação
+- CNPJ
+- Razão social
+- Nome fantasia
+- Matriz ou filial
+- Situação cadastral
 
-### Publicação 1: o robô que consulta CNPJ
+### 📅 Perfil da empresa
+- Data de abertura
+- Porte
+- Capital social
+- Faixa de faturamento pelo porte (não é o faturamento real)
 
-[Ver a publicação no LinkedIn](https://lnkd.in/p/dMwdxbUY)
+### 📋 Cadastro
+- Atividades da empresa
+- Natureza jurídica
+- Endereço
 
-![Mesa de trabalho com o robô da Receita em Python e o ambiente de desenvolvimento](imagens/publicacao-1-robo.png)
+### 🧾 Situação tributária
+- Simples Nacional
+- MEI
 
-### Publicação 2: a plataforma CheckRoot
+### 👥 Quadro de sócios
+- Nome e qualificação
+- CPF mascarado
+- Data de entrada na sociedade
 
-[Ver a publicação no LinkedIn](https://lnkd.in/p/ddpQVW5M)
+### 🚦 Análise de risco
+- Semáforo com o motivo por escrito e a fonte
 
-![Plataforma CheckRoot rodando ao lado do ambiente de desenvolvimento](imagens/publicacao-2-plataforma.png)
+## Duas formas de usar
 
-## Situação
+| | Plataforma web | Interface desktop |
+|---|---|---|
+| **Para quando** | Ver o dossiê na tela e guardar o histórico | Precisar de um resultado rápido |
+| **Como entra** | Login e senha, depois o CNPJ | Um CNPJ ou um Excel com vários |
+| **O que sai** | Dossiê na tela | Arquivo em Excel ou PDF |
+| **Situação** | Em desenvolvimento | Planejada |
 
-Em desenvolvimento.
+## Confiabilidade e segurança
+
+- **Retorno de erros:** quando uma consulta falha, o sistema avisa o que houve e registra em **log**, para a causa ser identificada.
+- **Transparência:** o que não foi consultado nunca aparece como "nada consta".
+- **Acesso:** somente usuários cadastrados, hoje em servidor próprio.
+- **LGPD:** CPF de pessoas físicas aparece mascarado.
+
+## O que está em desenvolvimento
+
+O login com e-mail e senha está pronto. Estamos finalizando a integração da interface com o layout, ligada às informações da Receita Federal por meio do motor do projeto.
+
+| Frente | Em andamento |
+|---|---|
+| **Interface e layout** | Definir o layout final das informações e integrar as telas |
+| **Dados e motor** | Ligar as informações da Receita Federal às telas e incluir novas informações e APIs |
+| **Qualidade (QA)** | Testes para encontrar erros e bugs |
+| **Próximas entregas** | Download em PDF e Excel, interface desktop e acesso externo seguro |
+
+## Tecnologias
+
+| Tecnologia | Para que é usada |
+|---|---|
+| **Python** | Linguagem principal do projeto |
+| **Flask** | Biblioteca do Python que cria o site no servidor |
+| **requests** | Faz as consultas às fontes externas |
+| **pandas** e **openpyxl** | Planilhas e relatórios em Excel |
+| **HTML** | Estrutura das telas |
+| **CSS** | Cores, fontes e aparência |
+| **JavaScript** | Interação na tela |
+| **SQL (SQLite)** | Usuários e histórico de consultas |
+| **pytest** | Testes automatizados |
+
+---
+
+© 2026 Júllia Melo. Todos os direitos reservados.
