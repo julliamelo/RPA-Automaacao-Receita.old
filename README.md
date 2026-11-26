@@ -20,7 +20,7 @@ O robô virou uma **plataforma com interface web**:
 - **Login com e-mail e senha**, para cada pessoa ter o seu espaço.
 - **Painel** com o resumo das consultas já feitas e o histórico de cada usuário.
 - **Dossiê da empresa** com cadastro, porte, sócios e saúde tributária, cada informação com a fonte e a data.
-- **Consulta em lote** por planilha, com relatório em Excel.
+- **Consulta em lote** por planilha, com relatório em Excel e PDF.
 
 ## Princípios
 
