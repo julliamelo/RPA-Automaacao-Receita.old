@@ -1,4 +1,4 @@
-# CheckRoot · Análise de CNPJ<br>Dados da Receita e de outras fontes públicas
+# CheckRoot · Análise de CNPJ<br>Dados da Receita e outras fontes via API pública
 
 Digite um CNPJ e receba um dossiê da empresa, montado a partir de fontes públicas, para apoiar decisões de **compra, venda e crédito**.
 
