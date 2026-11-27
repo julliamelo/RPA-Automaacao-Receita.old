@@ -1,4 +1,4 @@
-# CheckRoot · Consulta de CNPJ na Receita
+# CheckRoot · Consulta de CNPJ - Receita e outras fontes públicas
 
 Digite um CNPJ e receba um dossiê da empresa, montado a partir de fontes públicas, para apoiar decisões de **compra, venda e crédito**.
 
