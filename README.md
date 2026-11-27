@@ -2,7 +2,7 @@
 
 Digite um CNPJ e receba um dossiê da empresa, montado a partir de fontes públicas, para apoiar decisões de **compra, venda e crédito**.
 
-> **Repositório de portfólio.** Mostra o que o projeto faz. O código-fonte fica em um repositório privado. Quer conversar sobre ele? [Me chame no LinkedIn](https://www.linkedin.com/in/j%C3%BAllia-melo-5512a6194/).
+> **Repositório de portfólio.** Mostra o que o projeto faz. O código-fonte fica em um repositório privado.
 
 ## Como surgiu este desenvolvimento (case)
 
