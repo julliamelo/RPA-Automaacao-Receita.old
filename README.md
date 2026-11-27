@@ -6,7 +6,7 @@ Digite um CNPJ e receba um dossiê da empresa, montado a partir de fontes públi
 
 ## Como surgiu este desenvolvimento (case)
 
-Este **case** surgiu de uma **necessidade que acompanhei de perto em uma cooperativa**: várias áreas precisam conferir uma empresa antes de decidir. Vi isso na prática, analisei em detalhe e percebi que podia melhorar.
+Este **case** surgiu de uma **necessidade que acompanhei de perto na cooperativa**: várias áreas precisam conferir uma empresa antes de decidir. Vi isso na prática, analisei em detalhe e percebi que podia melhorar.
 
 Identifiquei uma **oportunidade de melhoria**: reunir informações de fontes públicas, reduzindo o gasto com dados e concentrando o investimento em desenvolvimento e manutenção. A cada etapa surgem novas necessidades, e a solução evolui junto.
 
