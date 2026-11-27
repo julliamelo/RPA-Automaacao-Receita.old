@@ -73,12 +73,24 @@ A aplicação que recebe o CNPJ e mostra o dossiê.
 
 ## Duas formas de usar
 
+O projeto tem **duas frentes**, para necessidades diferentes: a plataforma web e a interface desktop.
+
 | | Plataforma web | Interface desktop |
 |---|---|---|
 | **Para quando** | Ver o dossiê na tela e guardar o histórico | Precisar de um resultado rápido |
 | **Como entra** | Login e senha, depois o CNPJ | Um CNPJ ou um Excel com vários |
 | **O que sai** | Dossiê na tela | Arquivo em Excel ou PDF |
 | **Situação** | Em desenvolvimento | Planejada |
+
+### Interface desktop: rápida e direta
+
+Será um aplicativo mais simples, para onde não é preciso uma plataforma e o importante é a rapidez:
+
+1. A pessoa digita **um CNPJ** ou faz a consulta **em lote**, com muitos de uma vez.
+2. O aplicativo busca as informações.
+3. O arquivo é baixado automaticamente, em **Excel ou PDF**.
+
+*Frente planejada, ainda a ser desenvolvida.*
 
 ## Confiabilidade e segurança
 
