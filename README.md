@@ -4,7 +4,7 @@ Digite um CNPJ e receba um dossiê da empresa, montado a partir de fontes públi
 
 > **Repositório de portfólio.** Mostra o que o projeto faz. O código-fonte fica em um repositório privado.
 
-## Como surgiu este desenvolvimento (case)
+## Como surgiu este Desenvolvimento (case)
 
 Este **case** surgiu de uma **necessidade que acompanhei de perto na cooperativa**: várias áreas precisam conferir uma empresa antes de decidir. Vi isso na prática, analisei em detalhe e percebi que podia melhorar.
 
